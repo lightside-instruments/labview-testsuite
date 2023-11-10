@@ -1,0 +1,2 @@
+#!/usr/bin/bash -e
+xmllint --xpath '/*[local-name() = "config"]/*[local-name() = "networks"]/*[local-name() = "network"]/*[local-name() = "node"]/*[local-name() = "data"]/*[local-name() = "outputs-state"]/*[local-name() = "output"]/*[local-name() = "measurement"]/*[local-name() = "voltage"]/text()'  /tmp/networks.xml | head -n 2 | tail -n 1

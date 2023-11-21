@@ -1,0 +1,4 @@
+#!/usr/bin/bash -e
+after=`xmllint --xpath '/*[local-name() = "config"]/*[local-name() = "networks"]/*[local-name() = "network"]/*[local-name() = "node"]/*[local-name() = "data"]/*[local-name() = "interfaces-state"]/*[local-name() = "interface"][*[local-name()="name"] = "eth0"]/*[local-name() = "statistics"]/*[local-name() = "in-unicast-pkts"]/text()'  /tmp/after.xml | head -n 2 | tail -n 1`
+before=`xmllint --xpath '/*[local-name() = "config"]/*[local-name() = "networks"]/*[local-name() = "network"]/*[local-name() = "node"]/*[local-name() = "data"]/*[local-name() = "interfaces-state"]/*[local-name() = "interface"][*[local-name()="name"] = "eth0"]/*[local-name() = "statistics"]/*[local-name() = "in-unicast-pkts"]/text()'  /tmp/before.xml | head -n 2 | tail -n 1`
+echo -n $(( $after - $before))

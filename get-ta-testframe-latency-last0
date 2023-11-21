@@ -1,0 +1,6 @@
+#!/usr/bin/bash -e
+node_id="tester1"
+iface="eth1"
+
+latency=`xmllint --xpath '/*[local-name() = "config"]/*[local-name() = "networks"]/*[local-name() = "network"]/*[local-name() = "node"][*[local-name()="node-id"] = "'${node_id}'"]/*[local-name() = "data"]/*[local-name() = "interfaces"]/*[local-name() = "interface"][*[local-name()="name"] = "'${iface}'"]/*[local-name() = "traffic-analyzer"]/*[local-name() = "state"]/*[local-name() = "testframe-stats"]/*[local-name() = "latency"]/*[local-name() = "last"]/text()'  /tmp/after.xml`
+echo -n $latency

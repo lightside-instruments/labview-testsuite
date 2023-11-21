@@ -1,5 +1,5 @@
-labview-testsuite-dc-power-supply (1.0) jammy; urgency=medium
+labview-testsuite-network-tester (1.0) jammy; urgency=medium
 
- * Initial release. Automated DC power supply testsuite
+  * Initial release. Network tester testsuite
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 10 Nov 2023 18:33:58 +0100
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Tue, 21 Nov 2023 18:12:48 +0100

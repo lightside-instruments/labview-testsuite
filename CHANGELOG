@@ -1,5 +1,5 @@
-labview-testsuite-switch (1.0) jammy; urgency=medium
+labview-testsuite-camera (1.0) jammy; urgency=medium
 
-  * Initial release. Automated switch testsuite
+  * Initial release. Reads and previews camera image from NETCONF device implementing lsi-camera.yang
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 04 Dec 2023 00:59:40 +0100
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 29 Dec 2023 11:08:05 +0100

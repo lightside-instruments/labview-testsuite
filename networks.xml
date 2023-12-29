@@ -2,27 +2,17 @@
 <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
   <networks xmlns="urn:ietf:params:xml:ns:yang:ietf-network">
     <network>
-      <network-id>test0</network-id>
+      <network-id>lsi</network-id>
       <node>
-        <node-id>dc-power-supply0</node-id>
-        <description>Any power supply supporting lsi-ivi-dc-power-supply YANG model</description>
+        <node-id>camera0</node-id>
+        <description>Video camera</description>
         <netconf-connect-params xmlns="urn:tntapi:netconf-node">
-          <user>pi</user>
-          <server>192.168.4.103</server>
+          <user>y123</user>
+          <server>myserver.com</server>
           <password>mysecretpass</password>
           <ncport>830</ncport>
         </netconf-connect-params>
       </node>
-      <node>
-        <node-id>switch0</node-id>
-        <description>Any switch supporting lsi-ivi-switch YANG model</description>
-        <netconf-connect-params xmlns="urn:tntapi:netconf-node">
-          <user>pi</user>
-          <server>192.168.4.103</server>
-          <password>mysecretpass</password>
-          <ncport>830</ncport>
-        </netconf-connect-params>
-      </node>
-   </network>
+    </network>
   </networks>
 </config>

@@ -1,0 +1,3 @@
+#!/usr/bin/bash -e
+xmllint --xpath '/*[local-name() = "config"]/*[local-name() = "networks"]/*[local-name() = "network"]/*[local-name() = "node"]/*[local-name() = "data"]/*[local-name() = "cameras"]/*[local-name() = "camera"]/*[local-name() = "image"]/text()'  /tmp/networks.xml  | base64 -d > /tmp/image.jpg
+

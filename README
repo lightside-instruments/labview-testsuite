@@ -1,0 +1,16 @@
+Drives a rover implementing lsi-rover.yang and lsi-camera.yang
+
+Terminal 1:
+
+git clone https://github.com/lightside-instruments/tcpip2instr-yangcli.git
+python3 tcpip2instr-yangcli/tcpip2instr-yangcli.py networks.xml
+
+
+Terminal 2:
+
+# edit networks.xml
+
+export PATH=`pwd`:"$PATH"
+labview64 test.vi
+
+# Start and use the j,i,k,l keys

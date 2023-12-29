@@ -1,5 +1,5 @@
-labview-testsuite-camera (1.0) jammy; urgency=medium
+labview-testsuite-rover (1.0) jammy; urgency=medium
 
-  * Initial release. Reads and previews camera image from NETCONF device implementing lsi-camera.yang
+  * Initial release. Drive interface based on lsi-rover.yang and lsi-camera.yang
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 29 Dec 2023 11:08:05 +0100
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 29 Dec 2023 14:39:40 +0100

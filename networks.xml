@@ -4,13 +4,13 @@
     <network>
       <network-id>lsi</network-id>
       <node>
-        <node-id>camera0</node-id>
-        <description>Video camera</description>
+        <node-id>rover0</node-id>
+        <description>Rover with camera</description>
         <netconf-connect-params xmlns="urn:tntapi:netconf-node">
-          <user>y123</user>
-          <server>myserver.com</server>
-          <password>mysecretpass</password>
-          <ncport>830</ncport>
+          <user>pi</user>
+          <server>rover0.lightside-instruments.com</server>
+          <password>rover0pass</password>
+          <ncport>10850</ncport>
         </netconf-connect-params>
       </node>
     </network>
